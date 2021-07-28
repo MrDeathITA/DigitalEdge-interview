@@ -1,0 +1,34 @@
+   StockQuotesResponse response = stocks.quote(line);
+                    StockQuote stock = response.getStockQuote();
+                    System.out.printf("Date: %s, price: %s%n", stock.getLatestTradingDay(), stock.getPrice());
+              
+
+
+
+
+glaring issues
+
+pretty hardcode-y
+
+the error handling is mostly undefined and unexplained
+
+the workflow of the server is extremely barebones
+
+no oop strategies implemented
+
+
+glaring issues regarding the task implementations themselves
+
+right now the code only accepts the correct string, it should be so that it can take any input and then if it exists as a stock, it pulls it out and does the little game
+the end condition for both is very primitive (aka "end")
+socket programming is lousy?
+
+
+
+
+what i had to do
+
+tried to quickly re-learn APIs on java, tried to not use maven, ended up using maven anyway
+
+ended up using a wrapper (this took most of the time away)
+
